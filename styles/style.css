@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --font-family:'Outfit',sans-serif;
+    --max-width-: 350px;
+    --bg-color:hsl(217, 54%, 11%);
+    --border-radius: 20px;
+    --default-padding : 10px;
+    --shadow-default: 0 0 5px 3px rga(0,0,0,.1);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+.container_content{
+    display: flex;
+    max-width: var(--max-width-);
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(216, 50%, 16%);
+    margin: 100px 0px 100px 0px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-default);
+}
+.container_image{
+    position: relative;
+    width: 350px;
+
+}
+.container_imageContent{
+    width: 90%;
+    height: 100%;
+    margin: 20px 10px 0px 20px;
+    border-radius: var(--border-radius);
+}
+.hoverly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 93.5%;
+    margin: 20px 10px 0px 20px;
+    border-radius: var(--border-radius);
+    background: hsl(178, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.container_image:hover .hoverly{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.icon_view{
+    width: 50px;
+    height: 50px;
+}
+
+.container_textContent{
+    margin: 20px;
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+.container_title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 100%);
+}
+.container_description{
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+    color: hsl(215, 51%, 70%);
+}
+.container_pricing{
+    display: flex;
+    flex-direction: row;
+}
+.container_price{
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 117px;
+    padding-top: 7px;
+    color: hsl(178, 100%, 50%);
+}
+.container_leftdays{
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 10px;
+    color: hsl(215, 51%, 70%);
+    padding-top: 5px;
+}
+hr{
+    border:0.5px solid hsl(215, 32%, 27%);
+}
+.container_author{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.author_pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.container_creation{
+    font-weight: 300;
+    font-size: 15px;
+    color:hsl(215, 51%, 70%) ;
+    padding: 8px 0px 0px 15px  ;
+
+}
+.author_name{
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    padding: 8px;
+}
+
+.author_name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.container_title:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
