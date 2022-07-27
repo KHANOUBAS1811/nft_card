@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live Site URL here]()
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/nft-preview-card-tVttPi_cDw)
+- Live Site URL: [Live Site URL here](https://khanoubas1811.github.io/nft_card/)
 
 ## My process
 
